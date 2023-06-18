@@ -1,1 +1,1 @@
-# UWP-IP_DNS
+# UWP-whois

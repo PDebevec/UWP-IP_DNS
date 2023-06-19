@@ -10937,18 +10937,18 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\student\\.nuget\\packages\\": {},
+    "C:\\Users\\Peter\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Ddisk\\UWP-IP_DNS\\UWP-whois\\UWP-whois\\UWP-whois.csproj",
+      "projectUniqueName": "C:\\Users\\Peter\\Desktop\\2\\RPA\\UWP-whois\\UWP-whois\\UWP-whois\\UWP-whois.csproj",
       "projectName": "UWP-whois",
-      "projectPath": "C:\\Ddisk\\UWP-IP_DNS\\UWP-whois\\UWP-whois\\UWP-whois.csproj",
-      "packagesPath": "C:\\Users\\student\\.nuget\\packages\\",
-      "outputPath": "C:\\Ddisk\\UWP-IP_DNS\\UWP-whois\\UWP-whois\\obj\\",
+      "projectPath": "C:\\Users\\Peter\\Desktop\\2\\RPA\\UWP-whois\\UWP-whois\\UWP-whois\\UWP-whois.csproj",
+      "packagesPath": "C:\\Users\\Peter\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Peter\\Desktop\\2\\RPA\\UWP-whois\\UWP-whois\\UWP-whois\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -10956,7 +10956,7 @@
         "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\student\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Peter\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

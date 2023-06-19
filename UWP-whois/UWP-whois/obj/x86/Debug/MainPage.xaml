@@ -7,9 +7,112 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    
+    <ScrollViewer>
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState x:ConnectionId='2' x:Name="NarrowView">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="gr1.Height" Value="auto"/>
+                        <Setter Target="gr2.Height" Value="auto"/>
+                        <Setter Target="gr3.Height" Value="auto"/>
+                        <Setter Target="gc1.Width" Value="*"/>
+                        <Setter Target="gc2.Width" Value="auto"/>
+                        <Setter Target="gc3.Width" Value="auto"/>
+                        <Setter Target="inputBoxPanelLeft.(Grid.Column)" Value="0"/>
+                        <Setter Target="inputBoxPanelLeft.(Grid.Row)" Value="0"/>
+                        <Setter Target="descriptionPanel.(Grid.Column)" Value="0"/>
+                        <Setter Target="descriptionPanel.(Grid.Row)" Value="2"/>
+                        <Setter Target="appExplanationPanelLarge.(Grid.Column)" Value="0"/>
+                        <Setter Target="appExplanationPanelLarge.(Grid.Row)" Value="1"/>
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:ConnectionId='3' x:Name="WideView">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="600" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="gr1.Height" Value="*"/>
+                        <Setter Target="gr2.Height" Value="auto"/>
+                        <Setter Target="gr3.Height" Value="auto"/>
+                        <Setter Target="gc1.Width" Value="*"/>
+                        <Setter Target="gc2.Width" Value="*"/>
+                        <Setter Target="gc3.Width" Value="auto"/>
+                        <Setter Target="inputBoxPanelLeft.(Grid.Column)" Value="0"/>
+                        <Setter Target="inputBoxPanelLeft.(Grid.Row)" Value="0"/>
+                        <Setter Target="descriptionPanel.(Grid.Column)" Value="1"/>
+                        <Setter Target="descriptionPanel.(Grid.Row)" Value="1"/>
+                        <Setter Target="appExplanationPanelLarge.(Grid.Column)" Value="1"/>
+                        <Setter Target="appExplanationPanelLarge.(Grid.Row)" Value="0"/>
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:ConnectionId='4' x:Name="ExtraWideView">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="1200" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="gr1.Height" Value="*"/>
+                        <Setter Target="gr2.Height" Value="auto"/>
+                        <Setter Target="gr3.Height" Value="auto"/>
+                        <Setter Target="gc1.Width" Value="*"/>
+                        <Setter Target="gc2.Width" Value="*"/>
+                        <Setter Target="gc3.Width" Value="*"/>
+                        <Setter Target="inputBoxPanelLeft.(Grid.Column)" Value="1"/>
+                        <Setter Target="inputBoxPanelLeft.(Grid.Row)" Value="0"/>
+                        <Setter Target="descriptionPanel.(Grid.Column)" Value="2"/>
+                        <Setter Target="descriptionPanel.(Grid.Row)" Value="0"/>
+                        <Setter Target="appExplanationPanelLarge.(Grid.Column)" Value="0"/>
+                        <Setter Target="appExplanationPanelLarge.(Grid.Row)" Value="0"/>
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+        
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition x:ConnectionId='5' Height="*" x:Name="gr1"/>
+                <RowDefinition x:ConnectionId='6' Height="auto" x:Name="gr2"/>
+                <RowDefinition x:ConnectionId='7' Height="auto" x:Name="gr3"/>
+            </Grid.RowDefinitions>
 
-    <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition x:ConnectionId='8' Width="*" x:Name="gc1"/>
+                <ColumnDefinition x:ConnectionId='9' Width="*" x:Name="gc2"/>
+                <ColumnDefinition x:ConnectionId='10' Width="*" x:Name="gc3"/>
+            </Grid.ColumnDefinitions>
 
-    </Grid>
+            <StackPanel x:ConnectionId='11' x:Name="inputBoxPanelLeft" Grid.Column="1" Grid.Row="0" Margin="10">
+                <TextBlock Margin="0,10">Ime domene:</TextBlock>
+                <TextBox x:ConnectionId='14' MinWidth="250" x:Name="domena"/>
+                <TextBlock Margin="0,10">IP naslov:</TextBlock>
+                <TextBox x:ConnectionId='15' MinWidth="250" x:Name="ip"/>
+                <Button x:ConnectionId='16' Margin="0,10"                     >kdo je?</Button>
+                <TextBlock x:ConnectionId='17' x:Name="test">test</TextBlock>
+            </StackPanel>
+
+            <StackPanel x:ConnectionId='12' x:Name="appExplanationPanelLarge" Grid.Column="0" Grid.Row="0" Margin="10">
+                <TextBlock Margin="10,10">Opis Aplikacije:</TextBlock>
+                <TextBlock TextWrapping="Wrap">
+                        Praesent convallis ut lacus id laoreet. Mauris vitae sollicitudin diam, sit amet iaculis arcu. Vivamus in purus nunc. Proin at ante non mi vulputate tristique. Duis eleifend metus accumsan nisl pellentesque porta. Nulla lorem tellus, convallis quis venenatis porttitor, ultrices ac nunc. Maecenas sit amet porta arcu. Quisque vitae imperdiet velit, vel mattis tellus. Morbi tincidunt erat in tellus tincidunt rutrum. Curabitur pharetra aliquet metus eu rutrum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget est sed felis congue luctus quis id turpis. Nulla eu justo ut dui malesuada rhoncus vel nec nisi.
+
+        Ut sed ornare purus, ut finibus lectus. Nulla porttitor, nisi at cursus vulputate, mi ante tincidunt neque, non facilisis lacus magna a enim. Aliquam vehicula ultricies iaculis. Nam laoreet leo ante, sed suscipit erat ullamcorper pretium. Ut consequat tellus justo, sit amet consequat mi lobortis posuere. Aliquam semper imperdiet ex, a rutrum sapien sagittis non. Cras imperdiet scelerisque quam, congue accumsan nulla gravida non. Nam ultrices sagittis volutpat. Donec rhoncus rutrum malesuada. Sed erat ligula, elementum quis magna in, finibus aliquam neque. Aenean vel libero ac orci sollicitudin auctor sed vitae diam. Donec libero velit, posuere sed volutpat euismod, rutrum non nibh. Nullam rhoncus ornare aliquet.
+                </TextBlock>
+            </StackPanel>
+
+            <StackPanel x:ConnectionId='13' x:Name="descriptionPanel" Grid.Column="2" Grid.Row="0" Margin="10">
+                <TextBlock Margin="10,10">Ime domene API: networkcalc.com</TextBlock>
+                <TextBlock TextWrapping="Wrap">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id turpis ac magna semper placerat. Vestibulum vel vestibulum mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam sed sem id felis maximus elementum quis in sapien. Pellentesque sed nulla ultrices, ullamcorper felis eu, ultrices tellus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean sed orci sed est sollicitudin ultrices. Quisque bibendum nulla ut erat finibus tincidunt. Cras mattis ipsum at est aliquet, luctus posuere purus maximus. Nulla facilisi. Donec dictum sapien ut mi sodales efficitur. Cras libero ligula, iaculis id tincidunt id, ullamcorper vel sapien. Sed malesuada tempor congue. Aliquam rutrum tristique nisi sed egestas.
+                </TextBlock>
+                <TextBlock Margin="10,10">IP naslov API: ipapi.co</TextBlock>
+                <TextBlock TextWrapping="Wrap">
+                        Sed quis neque magna. Nullam eget magna ante. Pellentesque vitae leo scelerisque, dapibus ipsum at, porttitor leo. Sed dui velit, malesuada in diam in, luctus ultrices justo. Donec efficitur hendrerit turpis, et hendrerit velit fermentum eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus tortor eu lacus consectetur mollis. Vestibulum vitae eros sed nunc gravida porttitor in in nulla. Nullam sed mauris et lectus efficitur consequat nec in lacus. Mauris pharetra consectetur quam non dictum. Phasellus non pulvinar quam. Phasellus tincidunt at nunc interdum tincidunt. Donec ornare nisl dolor, nec ultricies mi maximus eget. Fusce congue commodo leo quis aliquam. Nullam felis metus, rutrum at eros eu, sagittis sodales massa. Cras ac quam massa.
+                </TextBlock>
+            </StackPanel>
+        </Grid>
+    </ScrollViewer>
 </Page>
 

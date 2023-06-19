@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "FtE7gEXov/mLOX92i9/yYhiBorH2e3sx3eTuPTEtJt8xxWXl2su5FcnI0NhXrYZbL800cGzWZMxou2fkFv+pyA==",
+  "dgSpecHash": "II77ZADn7CzJtuTTCJcv8Azjef0SrLaH1VGVC4x7WD9N4DSzW1D0A+jP1KRC/tGY5hYO4NZ2wOYuERyiHcSsVQ==",
   "success": true,
-  "projectFilePath": "C:\\Ddisk\\UWP-IP_DNS\\UWP-whois\\UWP-whois\\UWP-whois.csproj",
+  "projectFilePath": "C:\\Users\\Peter\\Desktop\\2\\RPA\\UWP-whois\\UWP-whois\\UWP-whois\\UWP-whois.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\student\\.nuget\\packages\\microsoft.extensions.primitives\\2.2.0\\microsoft.extensions.primitives.2.2.0.nupkg.sha512",
-    "C:\\Users\\student\\.nuget\\packages\\microsoft.net.http.headers\\2.2.8\\microsoft.net.http.headers.2.2.8.nupkg.sha512",
+    "C:\\Users\\Peter\\.nuget\\packages\\microsoft.extensions.primitives\\2.2.0\\microsoft.extensions.primitives.2.2.0.nupkg.sha512",
+    "C:\\Users\\Peter\\.nuget\\packages\\microsoft.net.http.headers\\2.2.8\\microsoft.net.http.headers.2.2.8.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.native.compiler\\2.2.12-rel-31116-00\\microsoft.net.native.compiler.2.2.12-rel-31116-00.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.uwpcoreruntimesdk\\2.2.14\\microsoft.net.uwpcoreruntimesdk.2.2.14.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.netcore.platforms\\2.1.0\\microsoft.netcore.platforms.2.1.0.nupkg.sha512",
@@ -29,9 +29,9 @@
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-x86.microsoft.net.native.sharedlibrary\\2.2.8-rel-31116-00\\runtime.win10-x86.microsoft.net.native.sharedlibrary.2.2.8-rel-31116-00.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\\2.2.14\\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk.2.2.14.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\\6.2.14\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform.6.2.14.nupkg.sha512",
-    "C:\\Users\\student\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
-    "C:\\Users\\student\\.nuget\\packages\\system.memory\\4.5.1\\system.memory.4.5.1.nupkg.sha512",
-    "C:\\Users\\student\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.1\\system.runtime.compilerservices.unsafe.4.5.1.nupkg.sha512"
+    "C:\\Users\\Peter\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
+    "C:\\Users\\Peter\\.nuget\\packages\\system.memory\\4.5.1\\system.memory.4.5.1.nupkg.sha512",
+    "C:\\Users\\Peter\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.1\\system.runtime.compilerservices.unsafe.4.5.1.nupkg.sha512"
   ],
   "logs": []
 }

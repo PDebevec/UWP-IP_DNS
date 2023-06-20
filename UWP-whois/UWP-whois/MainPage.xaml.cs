@@ -5,7 +5,9 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Runtime.Serialization.Json;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 using Windows.Data.Json;
 using Windows.Foundation;
@@ -36,11 +38,7 @@ namespace UWP_whois
         {
             if (domena.Text == "")
             {
-                if (ip.Text == "")
-                {
-                    return;
-                }
-                else
+                if (ip.Text != "")
                 {
                     try
                     {
@@ -48,14 +46,16 @@ namespace UWP_whois
                         {
                             test.Text = ip.Text;
                             client.DefaultRequestHeaders.Add("User-Agent", "ipapi.co/#c-sharp-v1.03");
-                            string apiUrl = "https://ipapi.co/"+ ip.Text +"/json/";
+                            string apiUrl = "https://ipapi.co/" + ip.Text + "/json/";
 
                             HttpResponseMessage response = await client.GetAsync(apiUrl);
                             test.Text = response.StatusCode.ToString();
                             response.EnsureSuccessStatusCode();
 
                             string jsonResponse = await response.Content.ReadAsStringAsync();
-                            test.Text = jsonResponse;
+                            ipapi json = JsonSerializer.Deserialize<ipapi>(jsonResponse);
+                            //navigate
+                            this.Frame.Navigate(typeof(whois), json);
                         }
                     }
                     catch (Exception ex)
@@ -63,6 +63,7 @@ namespace UWP_whois
                         Console.WriteLine($"An error occurred: {ex.Message}");
                     }
                 }
+                else return;
             }
             else
             {
@@ -77,7 +78,31 @@ namespace UWP_whois
                         response.EnsureSuccessStatusCode();
 
                         string jsonResponse = await response.Content.ReadAsStringAsync();
-                        test.Text = jsonResponse;
+                        Domain json = JsonSerializer.Deserialize<Domain>(jsonResponse);
+
+                        if (ip.Text == json.records.A[0].address)
+                        {
+                            //navigate
+                            using (HttpClient client2 = new HttpClient())
+                            {
+                                test.Text = ip.Text;
+                                client.DefaultRequestHeaders.Add("User-Agent", "ipapi.co/#c-sharp-v1.03");
+                                string apiUrl2 = "https://ipapi.co/" + ip.Text + "/json/";
+
+                                HttpResponseMessage response2 = await client.GetAsync(apiUrl);
+                                test.Text = response.StatusCode.ToString();
+                                response.EnsureSuccessStatusCode();
+
+                                string jsonResponse2 = await response.Content.ReadAsStringAsync();
+                                ipapi json2 = JsonSerializer.Deserialize<ipapi>(jsonResponse);
+                                //navigate
+                                this.Frame.Navigate(typeof(whois), json2);
+                            }
+                        }
+                        else
+                        {
+                            ip.Text = json.records.A[0].address;
+                        }
                     }
                 }
                 catch (Exception ex)

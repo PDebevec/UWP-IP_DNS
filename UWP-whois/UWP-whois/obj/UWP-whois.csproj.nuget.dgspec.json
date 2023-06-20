@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Peter\\Desktop\\2\\RPA\\UWP-whois\\UWP-whois\\UWP-whois\\UWP-whois.csproj": {}
+    "C:\\Ddisk\\UWP-whois\\UWP-whois\\UWP-whois\\UWP-whois.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Peter\\Desktop\\2\\RPA\\UWP-whois\\UWP-whois\\UWP-whois\\UWP-whois.csproj": {
+    "C:\\Ddisk\\UWP-whois\\UWP-whois\\UWP-whois\\UWP-whois.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Peter\\Desktop\\2\\RPA\\UWP-whois\\UWP-whois\\UWP-whois\\UWP-whois.csproj",
+        "projectUniqueName": "C:\\Ddisk\\UWP-whois\\UWP-whois\\UWP-whois\\UWP-whois.csproj",
         "projectName": "UWP-whois",
-        "projectPath": "C:\\Users\\Peter\\Desktop\\2\\RPA\\UWP-whois\\UWP-whois\\UWP-whois\\UWP-whois.csproj",
-        "packagesPath": "C:\\Users\\Peter\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Peter\\Desktop\\2\\RPA\\UWP-whois\\UWP-whois\\UWP-whois\\obj\\",
+        "projectPath": "C:\\Ddisk\\UWP-whois\\UWP-whois\\UWP-whois\\UWP-whois.csproj",
+        "packagesPath": "C:\\Users\\student\\.nuget\\packages\\",
+        "outputPath": "C:\\Ddisk\\UWP-whois\\UWP-whois\\UWP-whois\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -19,7 +19,7 @@
           "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Peter\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\student\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -46,6 +46,10 @@
             "Microsoft.Net.Http.Headers": {
               "target": "Package",
               "version": "[2.2.8, )"
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[7.0.3, )"
             }
           },
           "imports": [

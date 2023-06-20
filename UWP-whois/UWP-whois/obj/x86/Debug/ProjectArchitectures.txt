@@ -1,1 +1,1 @@
-C:\Users\Peter\Desktop\2\RPA\UWP-whois\UWP-whois\UWP-whois\UWP-whois.csproj;x86
+C:\Ddisk\UWP-whois\UWP-whois\UWP-whois\UWP-whois.csproj;x86

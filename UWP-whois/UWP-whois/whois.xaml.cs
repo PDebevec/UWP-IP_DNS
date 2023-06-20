@@ -26,5 +26,10 @@ namespace UWP_whois
         {
             this.InitializeComponent();
         }
+
+        protected override void OnNavigateTo()
+        {
+
+        }
     }
 }

@@ -2,11 +2,15 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
-    <Style x:Key="customstylebox" TargetType="TextBox">
-        
-    </Style>
-    <Style x:Key="customstyleblock" TargetType="TextBlock">
-
-    </Style>
     <FontFamily x:Key="customfont">/Assets/CascadiaCode_VTT.ttf</FontFamily>
+    
+    <Style TargetType="TextBlock">
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="FontFamily" Value="customfont"/>
+    </Style>
+
+    <Style TargetType="TextBox">
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="FontFamily" Value="customfont"/>
+    </Style>
 </ResourceDictionary>

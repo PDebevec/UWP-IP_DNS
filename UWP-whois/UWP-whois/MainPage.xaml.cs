@@ -33,7 +33,7 @@ namespace UWP_whois
         {
             this.InitializeComponent();
         }
-
+        string ipdomene = null;
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
             if (domena.Text == "")
@@ -44,17 +44,19 @@ namespace UWP_whois
                     {
                         using (HttpClient client = new HttpClient())
                         {
-                            test.Text = ip.Text;
+                            test.Text = "Pridobivanje podatkov!";
                             client.DefaultRequestHeaders.Add("User-Agent", "ipapi.co/#c-sharp-v1.03");
                             string apiUrl = "https://ipapi.co/" + ip.Text + "/json/";
 
                             HttpResponseMessage response = await client.GetAsync(apiUrl);
                             test.Text = response.StatusCode.ToString();
                             response.EnsureSuccessStatusCode();
-
+                            
+                            test.Text = "Podatki dobljeni!";
                             string jsonResponse = await response.Content.ReadAsStringAsync();
                             ipapi json = JsonSerializer.Deserialize<ipapi>(jsonResponse);
-                            //navigate
+                            
+                            test.Text = "Preusmerjevanje!";
                             this.Frame.Navigate(typeof(whois), json);
                         }
                     }
@@ -69,39 +71,42 @@ namespace UWP_whois
             {
                 try
                 {
-                    using (HttpClient client = new HttpClient())
+                    if (ip.Text == ipdomene)
                     {
-                        test.Text = domena.Text;
-                        string apiUrl = "https://networkcalc.com/api/dns/lookup/" + domena.Text;
-
-                        HttpResponseMessage response = await client.GetAsync(apiUrl);
-                        response.EnsureSuccessStatusCode();
-
-                        string jsonResponse = await response.Content.ReadAsStringAsync();
-                        Domain json = JsonSerializer.Deserialize<Domain>(jsonResponse);
-
-                        if (ip.Text == json.records.A[0].address)
+                        using (HttpClient client = new HttpClient())
                         {
-                            //navigate
-                            using (HttpClient client2 = new HttpClient())
-                            {
-                                test.Text = ip.Text;
-                                client.DefaultRequestHeaders.Add("User-Agent", "ipapi.co/#c-sharp-v1.03");
-                                string apiUrl2 = "https://ipapi.co/" + ip.Text + "/json/";
+                            test.Text = "Pridobivanje podatkov!";
+                            client.DefaultRequestHeaders.Add("User-Agent", "ipapi.co/#c-sharp-v1.03");
+                            string apiUrl = "https://ipapi.co/" + ip.Text + "/json/";
 
-                                HttpResponseMessage response2 = await client.GetAsync(apiUrl);
-                                test.Text = response.StatusCode.ToString();
-                                response.EnsureSuccessStatusCode();
+                            HttpResponseMessage response = await client.GetAsync(apiUrl);
+                            test.Text = response.StatusCode.ToString();
+                            response.EnsureSuccessStatusCode();
 
-                                string jsonResponse2 = await response.Content.ReadAsStringAsync();
-                                ipapi json2 = JsonSerializer.Deserialize<ipapi>(jsonResponse);
-                                //navigate
-                                this.Frame.Navigate(typeof(whois), json2);
-                            }
+                            string jsonResponse = await response.Content.ReadAsStringAsync();
+                            ipapi json = JsonSerializer.Deserialize<ipapi>(jsonResponse);
+                            test.Text = "Podatki dobljeni! Preusmerjevanje!";
+
+                            this.Frame.Navigate(typeof(whois), json);
                         }
-                        else
+                    }
+                    else
+                    {
+                        using (HttpClient client = new HttpClient())
                         {
+                            test.Text = "Pridobivanje IP domene!";
+                            string apiUrl = "https://networkcalc.com/api/dns/lookup/" + domena.Text;
+
+                            HttpResponseMessage response = await client.GetAsync(apiUrl);
+                            test.Text = response.StatusCode.ToString();
+                            response.EnsureSuccessStatusCode();
+
+                            string jsonResponse = await response.Content.ReadAsStringAsync();
+                            Domain json = JsonSerializer.Deserialize<Domain>(jsonResponse);
+                            test.Text = "IP pridobljen! Še enkrat klikni gumb!";
+
                             ip.Text = json.records.A[0].address;
+                            ipdomene = json.records.A[0].address;
                         }
                     }
                 }

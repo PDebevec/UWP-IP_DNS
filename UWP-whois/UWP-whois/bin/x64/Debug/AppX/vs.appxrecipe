@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\Peter\Desktop\2\RPA\UWP-whois\UWP-whois\UWP-whois\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-06-22T12:53:21.379</Modified>
+      <Modified>2023-06-22T13:17:23.728</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Peter\Desktop\2\RPA\UWP-whois\UWP-whois\UWP-whois\bin\x64\Debug\UWP-whois.exe">
       <PackagePath>entrypoint\UWP-whois.exe</PackagePath>
-      <Modified>2023-06-22T12:53:20.903</Modified>
+      <Modified>2023-06-22T13:17:22.873</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Peter\.nuget\packages\microsoft.bcl.asyncinterfaces\7.0.0\lib\netstandard2.0\Microsoft.Bcl.AsyncInterfaces.dll">
       <PackagePath>Microsoft.Bcl.AsyncInterfaces.dll</PackagePath>
@@ -76,37 +76,37 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Peter\Desktop\2\RPA\UWP-whois\UWP-whois\UWP-whois\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2023-06-18T10:15:29.275</Modified>
+      <Modified>2023-06-22T13:08:24.903</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Peter\Desktop\2\RPA\UWP-whois\UWP-whois\UWP-whois\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-06-18T10:15:29.275</Modified>
+      <Modified>2023-06-22T13:12:42.726</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Peter\Desktop\2\RPA\UWP-whois\UWP-whois\UWP-whois\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-06-18T10:15:29.276</Modified>
+      <Modified>2023-06-22T13:13:15.144</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Peter\Desktop\2\RPA\UWP-whois\UWP-whois\UWP-whois\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-06-18T10:15:29.276</Modified>
+      <Modified>2023-06-22T13:10:18.731</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Peter\Desktop\2\RPA\UWP-whois\UWP-whois\UWP-whois\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-06-18T10:15:29.277</Modified>
+      <Modified>2023-06-22T13:10:42.427</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Peter\Desktop\2\RPA\UWP-whois\UWP-whois\UWP-whois\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-06-18T10:15:29.278</Modified>
+      <Modified>2023-06-22T13:13:36.720</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Peter\Desktop\2\RPA\UWP-whois\UWP-whois\UWP-whois\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-06-18T10:15:29.278</Modified>
+      <Modified>2023-06-22T13:14:22.644</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Peter\Desktop\2\RPA\UWP-whois\UWP-whois\UWP-whois\Assets\CascadiaCode_VTT.ttf">
       <PackagePath>Assets\CascadiaCode_VTT.ttf</PackagePath>
@@ -118,19 +118,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Peter\Desktop\2\RPA\UWP-whois\UWP-whois\UWP-whois\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2023-06-22T12:53:20.811</Modified>
+      <Modified>2023-06-22T13:17:22.757</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Peter\Desktop\2\RPA\UWP-whois\UWP-whois\UWP-whois\bin\x64\Debug\customstyle.xbf">
       <PackagePath>customstyle.xbf</PackagePath>
-      <Modified>2023-06-22T12:53:20.811</Modified>
+      <Modified>2023-06-22T13:17:22.757</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Peter\Desktop\2\RPA\UWP-whois\UWP-whois\UWP-whois\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2023-06-22T12:53:20.807</Modified>
+      <Modified>2023-06-22T13:17:22.752</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Peter\Desktop\2\RPA\UWP-whois\UWP-whois\UWP-whois\bin\x64\Debug\whois.xbf">
       <PackagePath>whois.xbf</PackagePath>
-      <Modified>2023-06-22T12:53:20.811</Modified>
+      <Modified>2023-06-22T13:17:22.757</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -142,7 +142,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Peter\Desktop\2\RPA\UWP-whois\UWP-whois\UWP-whois\bin\x64\Debug\Core\UWP-whois.exe">
       <PackagePath>UWP-whois.exe</PackagePath>
-      <Modified>2023-06-22T12:53:21.375</Modified>
+      <Modified>2023-06-22T13:17:23.720</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

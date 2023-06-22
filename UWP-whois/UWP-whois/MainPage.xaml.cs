@@ -1,24 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
 using System.Net;
 using System.Net.Http;
-using System.Runtime.InteropServices.WindowsRuntime;
-using System.Runtime.Serialization.Json;
-using System.Text;
 using System.Text.Json;
-using System.Threading.Tasks;
-using Windows.Data.Json;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -42,6 +27,7 @@ namespace UWP_whois
                 {
                     try
                     {
+                        ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
                         using (HttpClient client = new HttpClient())
                         {
                             test.Text = "Pridobivanje podatkov!";
@@ -51,13 +37,20 @@ namespace UWP_whois
                             HttpResponseMessage response = await client.GetAsync(apiUrl);
                             test.Text = response.StatusCode.ToString();
                             response.EnsureSuccessStatusCode();
-                            
-                            test.Text = "Podatki dobljeni!";
+
+                            //test.Text = "Podatki dobljeni!";
                             string jsonResponse = await response.Content.ReadAsStringAsync();
-                            ipapi json = JsonSerializer.Deserialize<ipapi>(jsonResponse);
-                            
-                            test.Text = "Preusmerjevanje!";
-                            this.Frame.Navigate(typeof(whois), json);
+
+                            try
+                            {
+                                ipapi json = JsonSerializer.Deserialize<ipapi>(jsonResponse);
+                                test.Text = "Podatki dobljeni! Preusmerjevanje!";
+                                this.Frame.Navigate(typeof(whois), json);
+                            }
+                            catch (Exception)
+                            {
+                                test.Text = "IP je privaten ali pa ne obstaja!";
+                            }
                         }
                     }
                     catch (Exception ex)
@@ -65,7 +58,7 @@ namespace UWP_whois
                         Console.WriteLine($"An error occurred: {ex.Message}");
                     }
                 }
-                else return;
+                else this.Frame.Navigate(typeof(whois));
             }
             else
             {
@@ -73,6 +66,7 @@ namespace UWP_whois
                 {
                     if (ip.Text == ipdomene)
                     {
+                        ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
                         using (HttpClient client = new HttpClient())
                         {
                             test.Text = "Pridobivanje podatkov!";
@@ -84,10 +78,16 @@ namespace UWP_whois
                             response.EnsureSuccessStatusCode();
 
                             string jsonResponse = await response.Content.ReadAsStringAsync();
-                            ipapi json = JsonSerializer.Deserialize<ipapi>(jsonResponse);
-                            test.Text = "Podatki dobljeni! Preusmerjevanje!";
-
-                            this.Frame.Navigate(typeof(whois), json);
+                            try
+                            {
+                                ipapi json = JsonSerializer.Deserialize<ipapi>(jsonResponse);
+                                test.Text = "Podatki dobljeni! Preusmerjevanje!";
+                                this.Frame.Navigate(typeof(whois), json);
+                            }
+                            catch (Exception)
+                            {
+                                test.Text = "IP je privaten ali pa ne obstaja!";
+                            }
                         }
                     }
                     else

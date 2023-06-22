@@ -3,14 +3,22 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
     <FontFamily x:Key="customfont">/Assets/CascadiaCode_VTT.ttf</FontFamily>
-    
+
     <Style TargetType="TextBlock">
         <Setter Property="FontSize" Value="20"/>
         <Setter Property="FontFamily" Value="customfont"/>
+        <Setter Property="Foreground" Value="LightGreen"/>
     </Style>
-
+    <Style TargetType="Button">
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="FontFamily" Value="customfont"/>
+        <Setter Property="Foreground" Value="LightGreen"/>
+    </Style>
     <Style TargetType="TextBox">
         <Setter Property="FontSize" Value="20"/>
         <Setter Property="FontFamily" Value="customfont"/>
+    </Style>
+    <Style TargetType="Page">
+        <Setter Property="Background" Value="Black"/>
     </Style>
 </ResourceDictionary>

@@ -97,13 +97,13 @@
                 <TextBox x:ConnectionId='14' MinWidth="250" x:Name="domena"/>
                 <TextBlock Margin="0,10">IP naslov:</TextBlock>
                 <TextBox x:ConnectionId='15' MinWidth="250" x:Name="ip"/>
-                <TextBlock x:ConnectionId='16' x:Name="test"></TextBlock>
-                <Button x:ConnectionId='17' Margin="0,10"                     >kdo je?</Button>
+                <TextBlock x:ConnectionId='16' x:Name="test" Margin="0,10" HorizontalAlignment="Center"></TextBlock>
+                <Button x:ConnectionId='17'                     >kdo je?</Button>
             </StackPanel>
 
             <StackPanel x:ConnectionId='12' x:Name="appExplanationPanelLarge" Grid.Column="0" Grid.Row="0" Margin="10">
-                <TextBlock Margin="10,10">Opis Aplikacije:</TextBlock>
-                <TextBlock TextWrapping="Wrap">
+                <TextBlock Margin="0,10" FontWeight="Bold">Opis Aplikacije:</TextBlock>
+                <TextBlock Margin="10,0" TextWrapping="Wrap">
                         Praesent convallis ut lacus id laoreet. Mauris vitae sollicitudin diam, sit amet iaculis arcu. Vivamus in purus nunc. Proin at ante non mi vulputate tristique. Duis eleifend metus accumsan nisl pellentesque porta. Nulla lorem tellus, convallis quis venenatis porttitor, ultrices ac nunc. Maecenas sit amet porta arcu. Quisque vitae imperdiet velit, vel mattis tellus. Morbi tincidunt erat in tellus tincidunt rutrum. Curabitur pharetra aliquet metus eu rutrum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget est sed felis congue luctus quis id turpis. Nulla eu justo ut dui malesuada rhoncus vel nec nisi.
 
         Ut sed ornare purus, ut finibus lectus. Nulla porttitor, nisi at cursus vulputate, mi ante tincidunt neque, non facilisis lacus magna a enim. Aliquam vehicula ultricies iaculis. Nam laoreet leo ante, sed suscipit erat ullamcorper pretium. Ut consequat tellus justo, sit amet consequat mi lobortis posuere. Aliquam semper imperdiet ex, a rutrum sapien sagittis non. Cras imperdiet scelerisque quam, congue accumsan nulla gravida non. Nam ultrices sagittis volutpat. Donec rhoncus rutrum malesuada. Sed erat ligula, elementum quis magna in, finibus aliquam neque. Aenean vel libero ac orci sollicitudin auctor sed vitae diam. Donec libero velit, posuere sed volutpat euismod, rutrum non nibh. Nullam rhoncus ornare aliquet.
@@ -111,12 +111,12 @@
             </StackPanel>
 
             <StackPanel x:ConnectionId='13' x:Name="descriptionPanel" Grid.Column="2" Grid.Row="0" Margin="10">
-                <TextBlock Margin="10,10">Ime domene API: networkcalc.com</TextBlock>
-                <TextBlock TextWrapping="Wrap">
+                <TextBlock Margin="0,10" FontWeight="Bold">Ime domene API: networkcalc.com</TextBlock>
+                <TextBlock Margin="10,0" TextWrapping="Wrap">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id turpis ac magna semper placerat. Vestibulum vel vestibulum mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam sed sem id felis maximus elementum quis in sapien. Pellentesque sed nulla ultrices, ullamcorper felis eu, ultrices tellus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean sed orci sed est sollicitudin ultrices. Quisque bibendum nulla ut erat finibus tincidunt. Cras mattis ipsum at est aliquet, luctus posuere purus maximus. Nulla facilisi. Donec dictum sapien ut mi sodales efficitur. Cras libero ligula, iaculis id tincidunt id, ullamcorper vel sapien. Sed malesuada tempor congue. Aliquam rutrum tristique nisi sed egestas.
                 </TextBlock>
-                <TextBlock Margin="10,10">IP naslov API: ipapi.co</TextBlock>
-                <TextBlock TextWrapping="Wrap">
+                <TextBlock Margin="0,10" FontWeight="Bold">IP naslov API: ipapi.co</TextBlock>
+                <TextBlock Margin="10,0" TextWrapping="Wrap">
                         Sed quis neque magna. Nullam eget magna ante. Pellentesque vitae leo scelerisque, dapibus ipsum at, porttitor leo. Sed dui velit, malesuada in diam in, luctus ultrices justo. Donec efficitur hendrerit turpis, et hendrerit velit fermentum eu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus tortor eu lacus consectetur mollis. Vestibulum vitae eros sed nunc gravida porttitor in in nulla. Nullam sed mauris et lectus efficitur consequat nec in lacus. Mauris pharetra consectetur quam non dictum. Phasellus non pulvinar quam. Phasellus tincidunt at nunc interdum tincidunt. Donec ornare nisl dolor, nec ultricies mi maximus eget. Fusce congue commodo leo quis aliquam. Nullam felis metus, rutrum at eros eu, sagittis sodales massa. Cras ac quam massa.
                 </TextBlock>
             </StackPanel>

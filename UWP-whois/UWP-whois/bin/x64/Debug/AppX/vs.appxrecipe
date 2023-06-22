@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\Peter\Desktop\2\RPA\UWP-whois\UWP-whois\UWP-whois\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-06-22T13:17:23.728</Modified>
+      <Modified>2023-06-22T18:08:02.321</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Peter\Desktop\2\RPA\UWP-whois\UWP-whois\UWP-whois\bin\x64\Debug\UWP-whois.exe">
       <PackagePath>entrypoint\UWP-whois.exe</PackagePath>
-      <Modified>2023-06-22T13:17:22.873</Modified>
+      <Modified>2023-06-22T18:08:01.487</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Peter\.nuget\packages\microsoft.bcl.asyncinterfaces\7.0.0\lib\netstandard2.0\Microsoft.Bcl.AsyncInterfaces.dll">
       <PackagePath>Microsoft.Bcl.AsyncInterfaces.dll</PackagePath>
@@ -114,23 +114,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Peter\Desktop\2\RPA\UWP-whois\UWP-whois\UWP-whois\bin\x64\Debug\UWP-whois.xr.xml">
       <PackagePath>UWP-whois.xr.xml</PackagePath>
-      <Modified>2023-06-22T12:53:20.797</Modified>
+      <Modified>2023-06-22T18:08:01.295</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Peter\Desktop\2\RPA\UWP-whois\UWP-whois\UWP-whois\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2023-06-22T13:17:22.757</Modified>
+      <Modified>2023-06-22T18:08:01.329</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Peter\Desktop\2\RPA\UWP-whois\UWP-whois\UWP-whois\bin\x64\Debug\customstyle.xbf">
       <PackagePath>customstyle.xbf</PackagePath>
-      <Modified>2023-06-22T13:17:22.757</Modified>
+      <Modified>2023-06-22T18:08:01.329</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Peter\Desktop\2\RPA\UWP-whois\UWP-whois\UWP-whois\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2023-06-22T13:17:22.752</Modified>
+      <Modified>2023-06-22T18:08:01.323</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Peter\Desktop\2\RPA\UWP-whois\UWP-whois\UWP-whois\bin\x64\Debug\whois.xbf">
       <PackagePath>whois.xbf</PackagePath>
-      <Modified>2023-06-22T13:17:22.757</Modified>
+      <Modified>2023-06-22T18:08:01.328</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -142,7 +142,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Peter\Desktop\2\RPA\UWP-whois\UWP-whois\UWP-whois\bin\x64\Debug\Core\UWP-whois.exe">
       <PackagePath>UWP-whois.exe</PackagePath>
-      <Modified>2023-06-22T13:17:23.720</Modified>
+      <Modified>2023-06-22T18:08:02.312</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
